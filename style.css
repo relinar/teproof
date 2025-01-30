@@ -1,0 +1,147 @@
+/* Reset and global styles */
+body, h1, h2, p, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background: #f9f9f9;
+}
+
+/* Header Styles */
+.header {
+    background: #f4f4f4;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+/* Hero Section */
+.hero {
+    color: white;
+    text-align: center;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.1)
+    ), url('teproof-korjaa-kattosi.jpg') center center / cover no-repeat;
+    padding: 6rem 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    background: linear-gradient(90deg, #ffecd2 0%, #fcb69f 100%);
+    gap: 2rem;
+}
+
+.service {
+    background: #007bff;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+}
+
+.service h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.service a {
+    color: #ffecd2;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    background: url('kattoremontit-teproofilta.jpg') center center / cover no-repeat;
+    padding: 4rem 2rem;
+    color: white;
+}
+
+.about h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Footer CTA Section */
+.footer-cta {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+}
+
+.footer-cta h3 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+/* "Ota Yhteyttä" Button Styles */
+.cta-button {
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007bff;
+    position: relative;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Yellow Corner Effect for Button */
+.cta-button::before {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border-radius: inherit;
+    border: 2px solid yellow; /* Yellow border for corners */
+    pointer-events: none;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: #555;
+}
